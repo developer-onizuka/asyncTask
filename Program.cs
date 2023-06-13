@@ -9,7 +9,7 @@ public class test
         Console.WriteLine("Start Program");
 
         Console.WriteLine("Run Child process");
-        Task childAsync = MethodAsync();
+        Task child = MethodAsync();
 
         for (int i = 1; i <= 2; i++) 
         {
@@ -18,7 +18,7 @@ public class test
         }
         Console.WriteLine("All of Main Heavy processes completed");
 
-        await childAsync;
+        await child;
         Console.WriteLine("Confirm all of child processes completed after Main processes finished");
     }
 
